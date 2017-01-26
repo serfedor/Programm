@@ -1,0 +1,4 @@
+﻿  main.c
+c:\users\serlonic\documents\visual studio 2015\projects\c_down\c_down\main.c(10): warning C4013: 'system' undefined; assuming extern returning int
+  c_down.vcxproj -> c:\users\serlonic\documents\visual studio 2015\Projects\c_down\Debug\c_down.exe
+  c_down.vcxproj -> c:\users\serlonic\documents\visual studio 2015\Projects\c_down\Debug\c_down.pdb (Partial PDB)
