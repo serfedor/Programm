@@ -5,12 +5,9 @@
 
 int printTemp(int lower, int upper, int step)
 {
-	int fahr, celsius;
-	fahr = lower;
-	while (fahr <= upper) {
-		celsius = 5 * (fahr - 32) / 9;
-		printf("%d\t%d\n", celsius, fahr);
-		fahr += step;
+	int fahr;
+	for (fahr = lower; fahr <= upper; fahr += step) {
+		printf("%5.2f\t%5d\n", (5.0/9.0)*(fahr-32), fahr);
 	}
 	return 0;
 }
