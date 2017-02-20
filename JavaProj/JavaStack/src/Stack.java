@@ -2,19 +2,21 @@
  * Created by SerLonic on 07.02.2017.
  */
 public class Stack {
-    int count = -1;
-    int stackSize = 10;
-    int[] stack = new int[stackSize];
+    private int count = -1;
+    private int[] theStack;
+    Stack(int stackSize){
+        theStack = new int[stackSize];
+    }
     void push(int anElem){
-        if(count == stackSize -1){
+        if(count == theStack.length -1){
             return;
         }
-        else stack[++count] = anElem;
+        else theStack[++count] = anElem;
     }
     int pop(){
         if(count < 0){
             return 0;
         }
-        else return stack[count--];
+        else return theStack[count--];
     }
 }

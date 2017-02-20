@@ -3,11 +3,12 @@
  */
 public class JavaStack {
     public static void main(String[] argc){
-        Stack stack1 = new Stack();
-        for(int i = 0; i < stack1.stackSize; i++){
-            stack1.push((int)(Math.random()*10));
+        int stackSize = 10;
+        Stack stack1 = new Stack(stackSize);
+        for(int i = 0; i < stackSize; i++){
+            stack1.push((int)(Math.random()*stackSize));
         }
-       for(int i = 0; i < stack1.stackSize; i++){
+       for(int i = 0; i < stackSize; i++){
           System.out.println(stack1.pop());
        }
     }
