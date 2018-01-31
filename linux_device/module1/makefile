@@ -1,4 +1,4 @@
-#create 1/29/18
+#create January 29 2018
 obj-m := hello.o
 KERNELDIR := /lib/modules/`uname -r`/build
 all:
